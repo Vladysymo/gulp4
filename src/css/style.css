@@ -1,0 +1,251 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Regular.ttf");
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #dddddd;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+h1 {
+	font-size: 93px;
+	font-weight: 400;
+}
+
+@media (max-width: 575px) {
+	h1 {
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 359px) {
+	h1 {
+		font-size: 35px;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #D34A47;
+}
+
+@media (max-width: 575px) {
+	h2 {
+		font-size: 30px;
+	}
+}
+
+h3 {
+	font-size: 21.06px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 14.94px;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 12.06px;
+	font-weight: bold;
+}
+
+header {
+	transition: all 1s;
+	height: 100px;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+header .container {
+	height: 100%;
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 30px;
+}
+
+header .gulp-ico {
+	height: 50px;
+	width: 50px;
+}
+
+header .right {
+	display: flex;
+	align-items: center;
+}
+
+header .right a {
+	margin-left: 30px;
+	color: #dddddd;
+	transition: all 0.3s;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+
+@media (max-width: 359px) {
+	header .right a {
+		margin-left: 10px;
+	}
+}
+
+header .right a svg {
+	height: 40px;
+	width: 40px;
+	transition: all 0.3s;
+	fill: #dddddd;
+}
+
+header .right a:hover {
+	color: #D34A47;
+}
+
+header .right a:hover svg {
+	fill: #D34A47;
+}
+
+header.transformed {
+	opacity: 0;
+}
+
+body {
+	background-color: #202020;
+}
+
+@media (min-width: 993px) {
+	body {
+		overflow: hidden;
+	}
+}
+
+section.main {
+	height: 100vh;
+}
+
+section.main .container, section.main .row {
+	height: 100%;
+}
+
+section.main .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+section.main h1 {
+	transition: all 1s;
+	width: 100%;
+	text-align: center;
+	margin-left: -57px;
+	margin-top: -46px;
+}
+
+section.main h1 img {
+	height: 180px;
+	width: 180px;
+	transform: translateY(30px) translateX(30px);
+}
+
+@media (max-width: 575px) {
+	section.main h1 img {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+section.main h1.transformed {
+	transform: translateY(200px);
+}
+
+@media (max-width: 992px) {
+	section.main h1.transformed {
+		transform: translateY(0);
+	}
+}
+
+section.main h1.opacity {
+	opacity: 0;
+}
+
+section.main h2 {
+	transition: all 1s;
+	margin-top: 23px;
+}
+
+section.main h2.transformed {
+	transform: translateY(200px);
+}
+
+@media (max-width: 992px) {
+	section.main h2.transformed {
+		transform: translateY(0);
+	}
+}
+
+section.main h2.opacity {
+	opacity: 0;
+}
+
+section.main .console {
+	width: 920px;
+	transition: all 1s;
+	margin-top: 30px;
+	padding: 0 25px;
+	background-color: #38373f;
+	border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+	section.main .console {
+		width: auto;
+		position: absolute;
+		bottom: 0;
+		transform: translateY(90%);
+	}
+}
+
+section.main .console p {
+	font-family: 'Consolas', monospace;
+	color: #D34A47;
+	line-height: 72px;
+}
+
+section.main .console p span {
+	font-family: 'Consolas', monospace;
+	margin: 0 25px;
+}
+
+section.main .console.transformed {
+	opacity: 0;
+	transform: translateY(200px);
+}

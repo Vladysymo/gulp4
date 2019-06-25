@@ -1,0 +1,62 @@
+body
+	background-color: $grey
+	@media (min-width: 993px)
+		overflow: hidden
+section.main
+	height: 100vh
+	.container, .row
+		height: 100%
+	.row
+		+center(column)
+		position: relative
+	h1
+		+trs(1)
+		width: 100%
+		text-align: center
+		margin-left: -57px
+		margin-top: -46px
+		img
+			height: 180px
+			width: 180px
+			@media (max-width: 575px)
+				height: 100px
+				width: 100px
+			transform: translateY(30px) translateX(30px)
+		&.transformed
+			transform: translateY(200px)
+			@media (max-width: 992px)
+				transform: translateY(0)
+		&.opacity
+			opacity: 0
+	h2
+		+trs(1)
+		margin-top: 23px
+		&.transformed
+			transform: translateY(200px)
+			@media (max-width: 992px)
+				transform: translateY(0)
+		&.opacity
+			opacity: 0
+	
+	.console
+		width: 920px
+		+trs(1)
+		@media (max-width: 992px)
+			width: auto
+			position: absolute
+			bottom: 0
+			transform: translateY(90%)
+		margin-top: 30px
+		padding: 0 25px
+		background-color: #38373f
+		border-radius: 10px
+		p
+			font-family: 'Consolas', monospace
+			color: $gulp-color
+			line-height: 72px
+			span
+				font-family: 'Consolas', monospace
+				margin: 0 25px
+		&.transformed
+			opacity: 0
+			transform: translateY(200px)
